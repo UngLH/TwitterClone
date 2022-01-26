@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewTweetActivity"
+    android:orientation="vertical">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_medium">
+
+        <ImageButton
+            android:id="@+id/btn_close"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@null"
+            android:src="@drawable/ic_baseline_close_24" />
+
+        <Button
+            android:id="@+id/btn_tweet"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/btn_main_bg"
+            android:text="Tweet"
+            android:textAllCaps="false"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/edt_tweet_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_medium"
+        android:hint="What's happening"
+        android:lines="8"
+        android:maxLines="250"
+
+        android:gravity="top|left"
+        android:inputType="textMultiLine"
+        android:background="@android:color/transparent"
+        android:focusedByDefault="true" />
+
+</LinearLayout>
